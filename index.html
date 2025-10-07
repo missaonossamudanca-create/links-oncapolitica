@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>OnçaPolítica — Links Oficiais</title>
-  <meta name="description" content="Verdade na raça. Política sem filtro. Siga os links oficiais da OnçaPolítica." />
+  <meta name="description" content="Este perfil é um apoiador do MBL E PARTIDO MISSÃO com recortes e edição próprios de falas públicas para fins de comentário político, contextualização e crítica social." />
   <meta property="og:title" content="OnçaPolítica — Links Oficiais" />
-  <meta property="og:description" content="Verdade na raça. Política sem filtro. Siga os links oficiais da OnçaPolítica." />
+  <meta property="og:description" content="Este perfil é um apoiador do MBL E PARTIDO MISSÃO com recortes e edição próprios de falas públicas para fins de comentário político, contextualização e crítica social." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="logo op.png" />
   <link rel="icon" type="image/png" href="logo op.png" />
@@ -21,14 +21,12 @@
       --card: #0f0f10;
       --text: #f7f7f7;
       --muted: #b8b8b8;
-      --accent: #000;
-      --accent-2: #12b76a; /* verde mais legível */
       --border: #232325;
       --hover: #2a2a2d;
       --focus: #ffd84d;
     }
     * { box-sizing: border-box; }
-    html, body { height: 100%; }
+    html, body { min-height: 100%; }
     body {
       margin: 0;
       background: url('onça politica.png') no-repeat center center fixed, var(--bg);
@@ -36,9 +34,9 @@
       color: var(--text);
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      padding: 24px;
+      padding: 40px 24px;
       position: relative;
     }
     body::before {
@@ -81,20 +79,15 @@
       letter-spacing: .2px;
       color: var(--text);
     }
-    .badge {
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: .8px;
-      color: var(--muted);
+    .subtitle {
+      color: #dddddd;
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 500px;
     }
-    .badge img { width: 18px; height: 18px; border-radius: 50%; }
-    .subtitle { color: #dddddd; margin-top: 8px; font-size: 14px; }
     .section-title {
-      margin: 22px 2px 10px;
+      margin: 28px 2px 12px;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: .9px;
@@ -127,18 +120,13 @@
     .emoji { font-size: 20px; }
     .hint { font-weight: 500; color: var(--muted); font-size: 12px; }
     .chev { opacity: .7; }
-    .cta { margin-top: 18px; display: grid; grid-template-columns: 1fr; gap: 12px; }
-    .cta .primary { background: var(--accent-2); color: #08130c; border: 1px solid #0b9b58; }
-    .cta .secondary { background: #101012; color: #ffcc00; border: 1px solid #3a3a3d; }
     .foot {
-      margin-top: 22px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      margin-top: 28px;
+      text-align: center;
       color: var(--muted);
       font-size: 12px;
+      opacity: .85;
     }
-    .sig { opacity: .85; }
 
     /* Animations */
     @keyframes pulseGlow {
@@ -159,7 +147,8 @@
 
     /* Layout mobile seguro */
     @media (max-width: 380px) {
-      .logo { width: 76px; height: 76px; }
+      body { padding: 24px 16px; }
+      .logo { width: 76px; height: 76px; flex-shrink: 0;}
       h1 { font-size: 26px; }
     }
   </style>
@@ -171,81 +160,27 @@
         <div class="logo" aria-hidden="true"></div>
         <div class="title">
           <h1 id="title">@OnçaPolítica</h1>
-          <div class="badge"><img src="logo op.png" alt=""> Links oficiais • Verificados</div>
-          <div class="subtitle">Verdade na raça. Política sem filtro. Siga e participe.</div>
+          <div class="subtitle">Este perfil é um apoiador do MBL E PARTIDO MISSÃO com recortes e edição próprios de falas públicas para fins de comentário político, contextualização e crítica social.</div>
         </div>
       </header>
-
-      <h2 class="section-title">Destaques</h2>
-      <div class="cta">
-        <a class="btn primary" href="https://youtube.com/@OncaPolitica?sub_confirmation=1" target="_blank" rel="noopener" aria-label="Inscreva-se no canal do YouTube">
-          <span class="left"><span class="emoji">📺</span> Inscreva‑se no YouTube</span>
-          <span class="chev">›</span>
-        </a>
-        <a class="btn secondary" href="https://x.com/intent/follow?screen_name=OncaPolitica" target="_blank" rel="noopener" aria-label="Seguir Onça Política no X">
-          <span class="left"><img src="logo op.png" alt="" style="width:20px;height:20px;border-radius:50%"> Seguir no X</span>
-          <span class="chev">›</span>
-        </a>
-      </div>
 
       <h2 class="section-title">Redes oficiais</h2>
       <nav class="links" aria-label="Links oficiais">
         <a class="btn" href="https://youtube.com/@OncaPolitica" target="_blank" rel="noopener" aria-label="Ir para o YouTube da Onça Política">
           <span class="left"><span class="emoji">▶️</span> YouTube <span class="hint">/@OncaPolitica</span></span><span class="chev">›</span>
         </a>
-        <a class="btn" href="https://x.com/OncaPolitica" target="_blank" rel="noopener" aria-label="Ir para o perfil no X">
-          <span class="left"><span class="emoji">𝕏</span> X (Twitter) <span class="hint">/OncaPolitica</span></span><span class="chev">›</span>
+        <a class="btn" href="https://x.com/charles1araujo" target="_blank" rel="noopener" aria-label="Ir para o perfil no X">
+          <span class="left"><span class="emoji">𝕏</span> X (Twitter) <span class="hint">/charles1araujo</span></span><span class="chev">›</span>
         </a>
-        <a class="btn" href="https://tiktok.com/@oncapolitica" target="_blank" rel="noopener" aria-label="Ir para o TikTok">
+        <a class="btn" href="https://www.tiktok.com/@oncapolitica" target="_blank" rel="noopener" aria-label="Ir para o TikTok">
           <span class="left"><span class="emoji">🎬</span> TikTok <span class="hint">@oncapolitica</span></span><span class="chev">›</span>
-        </a>
-        <a class="btn" href="https://instagram.com/oncapolitica.clip" target="_blank" rel="noopener" aria-label="Ir para o Instagram de cortes">
-          <span class="left"><span class="emoji">📸</span> Instagram — Cortes <span class="hint">@oncapolitica.clip</span></span><span class="chev">›</span>
-        </a>
-        <a class="btn" href="https://t.me/OncaPolitica" target="_blank" rel="noopener" aria-label="Abrir canal no Telegram">
-          <span class="left"><span class="emoji">📣</span> Telegram <span class="hint">t.me/OncaPolitica</span></span><span class="chev">›</span>
-        </a>
-        <a class="btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="Abrir conversa no WhatsApp">
-          <span class="left"><span class="emoji">💬</span> WhatsApp — Contato direto <span class="hint">+55 11 99999-9999</span></span><span class="chev">›</span>
-        </a>
-        <a class="btn" href="mailto:contato@oncapolitica.com" aria-label="Enviar e-mail para contato@oncapolitica.com">
-          <span class="left"><span class="emoji">✉️</span> E‑mail Profissional <span class="hint">contato@oncapolitica.com</span></span><span class="chev">›</span>
-        </a>
-        <a class="btn" href="https://apoia.se/OncaPolitica" target="_blank" rel="noopener" aria-label="Apoiar o projeto">
-          <span class="left"><span class="emoji">⚡</span> Apoie o Projeto <span class="hint">apoia.se/OncaPolitica</span></span><span class="chev">›</span>
         </a>
       </nav>
 
-      <h2 class="section-title">PIX (doações)</h2>
-      <div class="links">
-        <button id="copyPix" class="btn" type="button" aria-label="Copiar chave PIX">
-          <span class="left"><span class="emoji">📎</span> Copiar chave PIX <span class="hint" id="pixKey">contato@oncapolitica.com</span></span>
-          <span class="chev">›</span>
-        </button>
-      </div>
-
       <footer class="foot">
-        <div class="sig">© OnçaPolítica • Links verificados</div>
-        <div class="hint">Segurança • Privacidade</div>
+        <div>© OnçaPolítica • Links verificados</div>
       </footer>
     </section>
   </main>
-
-  <script>
-    // Copiar chave PIX com feedback acessível
-    const btn = document.getElementById('copyPix');
-    const key = document.getElementById('pixKey').textContent.trim();
-    btn?.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(key);
-        const original = btn.innerHTML;
-        btn.innerHTML = '<span class="left">✅ Chave PIX copiada</span><span class="chev">›</span>';
-        setTimeout(() => { btn.innerHTML = original; }, 2200);
-      } catch (e) {
-        alert('Não foi possível copiar a chave PIX.');
-        console.error('Erro ao copiar:', e);
-      }
-    });
-  </script>
 </body>
 </html>
